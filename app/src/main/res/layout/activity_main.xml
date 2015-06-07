@@ -25,7 +25,7 @@
         android:background="@drawable/buttons"
         android:enabled="true"
         android:clickable="true"
-        android:onClick="setContentView"
+        android:onClick="displayToast"
         android:nestedScrollingEnabled="true"
         android:elegantTextHeight="true" />
 
@@ -40,6 +40,7 @@
         android:background="@drawable/buttons"
         android:layout_marginTop="10dp"
         android:enabled="true"
+        android:onClick="displayToast"
         android:clickable="true" />
 
     <Button
@@ -53,6 +54,7 @@
         android:background="@drawable/buttons"
         android:layout_marginTop="10dp"
         android:enabled="true"
+        android:onClick="displayToast"
         android:clickable="true" />
 
     <Button
@@ -66,6 +68,7 @@
         android:background="@drawable/buttons"
         android:layout_marginTop="10dp"
         android:enabled="true"
+        android:onClick="displayToast"
         android:clickable="true" />
 
     <Button
@@ -79,6 +82,7 @@
         android:background="@drawable/buttons"
         android:layout_marginTop="10dp"
         android:enabled="true"
+        android:onClick="displayToast"
         android:clickable="true" />
 
     <Button
@@ -91,6 +95,7 @@
         android:background="@drawable/buttons"
         android:layout_marginTop="10dp"
         android:enabled="true"
+        android:onClick="displayToast"
         android:clickable="true" />
 
 </RelativeLayout>

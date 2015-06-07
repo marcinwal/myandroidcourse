@@ -1,7 +1,6 @@
 package eu.ratingpedia.myappportfolio;
 
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +11,20 @@ import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    public void displayToast(View view){
+        Button button = (Button) view;
+        String buttonText = (String) button.getText();
+
+        Context context = getApplicationContext();
+        CharSequence text = getString(R.string.app_name) + buttonText;
+
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context,text,duration);
+        toast.show();
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,59 +39,59 @@ public class MainActivity extends ActionBarActivity {
         Button biggerButton = (Button) findViewById(R.id.bigger);
         Button xyzButton = (Button) findViewById(R.id.xyz);
 
-        spotifyButton.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"you pressed spotify",Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        ownButton.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"you pressed ownApp",Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        libraryButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"you pressed Library",Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        scoresButton.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"you pressed scores",Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        xyzButton.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"you pressed xyzButton",Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        biggerButton.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"you pressed biggerButton",Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
+//        spotifyButton.setOnClickListener(new View.OnClickListener(){
+//
+//            @Override
+//            public void onClick(View v) {
+//                Toast toast = Toast.makeText(getApplicationContext(),"you pressed spotify",Toast.LENGTH_SHORT);
+//                toast.show();
+//            }
+//        });
+//
+//        ownButton.setOnClickListener(new View.OnClickListener(){
+//
+//            @Override
+//            public void onClick(View v) {
+//                Toast toast = Toast.makeText(getApplicationContext(),"you pressed ownApp",Toast.LENGTH_SHORT);
+//                toast.show();
+//            }
+//        });
+//
+//        libraryButton.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                Toast toast = Toast.makeText(getApplicationContext(),"you pressed Library",Toast.LENGTH_SHORT);
+//                toast.show();
+//            }
+//        });
+//
+//        scoresButton.setOnClickListener(new View.OnClickListener(){
+//
+//            @Override
+//            public void onClick(View v) {
+//                Toast toast = Toast.makeText(getApplicationContext(),"you pressed scores",Toast.LENGTH_SHORT);
+//                toast.show();
+//            }
+//        });
+//
+//        xyzButton.setOnClickListener(new View.OnClickListener(){
+//
+//            @Override
+//            public void onClick(View v) {
+//                Toast toast = Toast.makeText(getApplicationContext(),"you pressed xyzButton",Toast.LENGTH_SHORT);
+//                toast.show();
+//            }
+//        });
+//
+//        biggerButton.setOnClickListener(new View.OnClickListener(){
+//
+//            @Override
+//            public void onClick(View v) {
+//                Toast toast = Toast.makeText(getApplicationContext(),"you pressed biggerButton",Toast.LENGTH_SHORT);
+//                toast.show();
+//            }
+//        });
 
     }
 
