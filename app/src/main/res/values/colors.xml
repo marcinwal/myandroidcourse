@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="buttonBacground">#1B5E91</color>
+    <color name="background">#ff6de0ff</color>
+    <color name="strokeNormal">#1B5E91</color>
+    <color name="buttonGradientStart">#1B5E91</color>
+    <color name="buttonGradientEnd">#fff000</color>
+</resources>

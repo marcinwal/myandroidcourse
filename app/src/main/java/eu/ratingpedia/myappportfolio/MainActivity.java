@@ -32,12 +32,12 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button spotifyButton = (Button) findViewById(R.id.spotify);
-        Button ownButton = (Button) findViewById(R.id.own);
-        Button libraryButton = (Button) findViewById(R.id.library);
-        Button scoresButton = (Button) findViewById(R.id.scores);
-        Button biggerButton = (Button) findViewById(R.id.bigger);
-        Button xyzButton = (Button) findViewById(R.id.xyz);
+//        Button spotifyButton = (Button) findViewById(R.id.spotify);
+//        Button ownButton = (Button) findViewById(R.id.own);
+//        Button libraryButton = (Button) findViewById(R.id.library);
+//        Button scoresButton = (Button) findViewById(R.id.scores);
+//        Button biggerButton = (Button) findViewById(R.id.bigger);
+//        Button xyzButton = (Button) findViewById(R.id.xyz);
 
 //        spotifyButton.setOnClickListener(new View.OnClickListener(){
 //
