@@ -19,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
 
-        final Button spotifyButton = (Button) findViewById(R.id.spotify);
+        Button spotifyButton = (Button) findViewById(R.id.spotify);
         Button ownButton = (Button) findViewById(R.id.own);
         Button libraryButton = (Button) findViewById(R.id.library);
         Button scoresButton = (Button) findViewById(R.id.scores);
@@ -30,8 +30,6 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void onClick(View v) {
-                int color = spotifyButton.getDrawingCacheBackgroundColor();
-//                spotifyButton.setBackgroundColor(0xFFFF0000);
                 Toast toast = Toast.makeText(getApplicationContext(),"you pressed spotify",Toast.LENGTH_SHORT);
                 toast.show();
             }
